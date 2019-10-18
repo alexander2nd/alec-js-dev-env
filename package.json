@@ -3,20 +3,22 @@
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
     "start": "node buildScripts/srcServer.js",
-    "localtunnel": "lt --port 3000 --subdomain alecoc",
+    "localtunnel": "lt --port 3000 --subdomain soregan",
     "share": "npm-run-all --parallel start localtunnel"
   },
   "author": "Alec O Connell",
   "license": "MIT",
   "dependencies": {
-    "whatwg-fetch": "1.0.0"
+
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
     "chai": "3.5.0",
