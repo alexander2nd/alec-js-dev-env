@@ -5,7 +5,7 @@
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "node buildScripts/srcServer.js",
-    "localtunnel": "lt --port 3000 --subdomain soregan",
+    "localtunnel": "lt --port 3000 --subdomain alecoc",
     "share": "npm-run-all --parallel start localtunnel"
   },
   "author": "Alec O Connell",
