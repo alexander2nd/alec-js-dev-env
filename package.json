@@ -2,8 +2,13 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
-  "scripts": {},
-  "author": "Cory House",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "node buildScripts/srcServer.js",
+    "localtunnel": "lt --port 3000 --subdomain alecoc",
+    "share": "npm-run-all --parallel start localtunnel"
+  },
+  "author": "Alec O Connell",
   "license": "MIT",
   "dependencies": {
     "whatwg-fetch": "1.0.0"
